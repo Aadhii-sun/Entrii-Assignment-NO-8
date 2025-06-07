@@ -1,0 +1,74 @@
+/* General page styling */
+body {
+  background-color: #f0f4f8;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Container styling */
+.container {
+  max-width: 600px;
+  margin: auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+h1 {
+  font-weight: bold;
+  color: #343a40;
+}
+
+/* Input and Button */
+#taskInput {
+  border-radius: 8px 0 0 8px;
+  border-right: none;
+}
+
+#addTaskBtn {
+  border-radius: 0 8px 8px 0;
+}
+
+/* Filter button styling */
+.filter-btn {
+  flex: 1;
+  transition: all 0.3s ease;
+}
+
+.filter-btn.active {
+  background-color: #0d6efd;
+  color: #fff;
+  border-color: #0d6efd;
+}
+
+/* Task list items */
+.list-group-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  transition: all 0.3s ease;
+}
+
+/* Completed task style */
+.completed span {
+  text-decoration: line-through;
+  color: #999;
+}
+
+/* Hover delete button */
+.delete-btn {
+  background-color: transparent;
+  border: none;
+  color: red;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.delete-btn:hover {
+  color: darkred;
+}
